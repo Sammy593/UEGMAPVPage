@@ -13,26 +13,15 @@
         <img src="./images/Logo Colegio.png" alt="" />
         <h1>UEGMA Periodico Virtual</h1>
         <span class="icon-menu" id="btn-menu">=</span>
-        <nav class="nav" id="nav">
-          <ul class="item-container">
-            <li class="item-menu">
-              <a class="menu-link" href="./principal.html">Inicio</a>
-            </li>
-            <li class="item-menu">
-              <a class="menu-link" href="./menu_noticias.html">Social</a>
-            </li>
-            <li class="item-menu"><a class="menu-link" href="">General</a></li>
-            <li class="item-menu">
-              <a class="menu-link" href="">Participaciones</a>
-            </li>
-            <li class="item-menu">
-              <a class="menu-link" href="./galeria.html">Galeria</a>
-            </li>
-            <li class="item-menu">
-              <a class="menu-link" href="./login.html">Iniciar sesion</a>
-            </li>
+        <nav class="nav"  id="nav">
+          <ul class="item-container" id="item-container">
+            <li class="item-menu"><a class="menu-link" href="./principal.html">Inicio</a></li>
+              <li class="item-menu"><a class="menu-link" href="./menu_noticias.html">Social</a></li>
+              <li class="item-menu"><a class="menu-link" href="">General</a></li>
+              <li class="item-menu"><a class="menu-link" href="">Participaciones</a></li>
+              <li class="item-menu" id="aqui"><a class="menu-link" href="./galeria.html">Galeria</a></li>
           </ul>
-        </nav>
+      </nav>
       </div>
     </header>
     <h1 class="t_noticia">Social</h1>
@@ -105,13 +94,16 @@
         </div>
         
         <div class="content_container">
-            <div class="comentario_container">
+          <div class="comentario_container" id="comentario_NoInicio">
+            <a class="btn_comentario" href="./login.html"><butto>Inicia sesion para comentar</button></a>
+          </div>
+            <div class="comentario_container" id="comentario_usuario">
                 <div class="inf_user_container">
                     <div class="img_container">
-                        <img src="./images/icon_perfil.jpg" alt="">
+                        <img id="profile-picture" alt="">
                     </div>
                     <div class="inf_container">
-                        <span class="name"> Nombre</span>
+                        <span class="name" id="profile-name"></span>
                         <span class="date"> Enero | 2022</span>
                     </div>
                 </div>
@@ -211,5 +203,10 @@
         <span class="inf3">...</span>
     </footer>
     <script src="./js/principal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase-auth.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase-database.min.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/acciones.js"></script>
   </body>
 </html>

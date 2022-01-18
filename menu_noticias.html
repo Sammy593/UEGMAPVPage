@@ -14,13 +14,12 @@
             <h1>UEGMA Periodico Virtual</h1>
             <span class="icon-menu" id="btn-menu">=</span>
             <nav class="nav"  id="nav">
-                <ul class="item-container">
-                    <li class="item-menu"><a class="menu-link" href="./principal.html">Inicio</a></li>
-                    <li class="item-menu"><a class="menu-link" href="">Social</a></li>
+                <ul class="item-container" id="item-container">
+                  <li class="item-menu"><a class="menu-link" href="./principal.html">Inicio</a></li>
+                    <li class="item-menu"><a class="menu-link" href="./menu_noticias.html">Social</a></li>
                     <li class="item-menu"><a class="menu-link" href="">General</a></li>
                     <li class="item-menu"><a class="menu-link" href="">Participaciones</a></li>
-                    <li class="item-menu"><a class="menu-link" href="./galeria.html">Galeria</a></li>
-                    <li class="item-menu"><a class="menu-link" href="./login.html">Iniciar sesion</a></li>
+                    <li class="item-menu" id="aqui"><a class="menu-link" href="./galeria.html">Galeria</a></li>
                 </ul>
             </nav>
         </div>
@@ -215,5 +214,10 @@
     </footer>
 
     <script src="./js/principal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase-auth.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase-database.min.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/acciones.js"></script>
 </body>
 </html>

@@ -228,6 +228,10 @@ header .contenedor {
     width: 100%;
 }
 
+#comentario_usuario{
+    visibility: visible;
+}
+
 .text_container, 
 .comentario_container{
     width: 90%;
@@ -247,6 +251,46 @@ header .contenedor {
     font-size: 18px;
     font-weight: 400;
 }
+
+/* Comentario no inicio*/
+#comentario_NoInicio{
+    visibility: hidden;
+    position: relative;
+    width: 90%;
+    height: 165px;
+    background: #9fe565a1;;
+    margin-top: -20px;
+    box-shadow: inset 1px 1px 15px #797979;
+    z-index: 0;
+}
+.btn_comentario:hover{
+    border: 2px #4b7e88 solid;
+    cursor: pointer;
+    font-size: 17px;
+    padding-top: 10px;
+}
+.btn_comentario{
+    text-align: center;
+    padding-top: 12px;
+    color: black;
+    text-decoration: none;
+    background: #fff8b9;
+    border: none;
+    margin: auto;
+    width: 40%;
+    height: 30%;
+    border-radius: 20px;
+    font-family: anton;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+#comentario_usuario{
+    margin-top: -160px;
+    z-index: 1;
+}
+
+/* ----------*/
 /*titulo*/
 .comentario_title_container{
     font-family: Anton;
@@ -345,6 +389,7 @@ header .contenedor {
     color: #6b6969;
     font-size: 15px;
     border: none;
+    resize: none;
 }
 
 #comentario1{

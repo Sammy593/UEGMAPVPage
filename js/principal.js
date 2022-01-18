@@ -45,10 +45,10 @@ btnLeft.addEventListener('click', function(){
     Prev();
 });
 
-/*setInterval(function(){
+setInterval(function(){
     Next();
 }, 5000);
-*/
+
 
 var pag = document.getElementById("pag_container1");
 var btn1 = document.getElementById("1");

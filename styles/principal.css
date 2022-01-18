@@ -333,9 +333,16 @@ main{
     margin-top: 10px;
     width: 100%;
     height: 300px;
-    -o-object-fit: cover;
+    object-fit: fill;
 }
-
+.panel_img:hover {
+    width: 105%;
+    height: 350px;
+    margin-left: -10px;
+    filter: blur(1px) brightness(70%);
+    transition: width 2s, height 2s, margin-left 2s,
+    filter 2s;
+}
 .p_noticeTitle{
     font-weight:bolder;
     padding: 20px 0px;
@@ -415,7 +422,6 @@ main{
     height: 300px;
     -o-object-fit: cover;
 }
-
 .g_card_name{
     position: relative;
     font-family: Anton;
