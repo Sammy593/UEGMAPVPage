@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <a href="">Ayuda</a>
+      <a href="">Contactanos</a>
+
+      <select name="opcion-idioma" id="">
+        <option>Español</option>
+        <option>Ingles</option>
+      </select>
+    </nav>
+
+    <main>
+      <section class="section1">
+        <div class="cabecera">
+          <h1>BIENVENIDO/A</h1>
+          <h4>No tienes cuenta?,<a href="">Registrate</a></h4>
+        </div>
+
+        <div class="form">
+          <div class="border-input">
+            <label for="name">Nombre de usuario</label>
+          </div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="wsledesma@espe.edu.ec"
+          />
+
+          <div class="border-input">
+            <label for="contrasenia">Contraseña</label>
+          </div>
+          <input type="password" id="contrasenia" name="contrasenia" />
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            onclick="mostrarContrasena()"
+          >
+            Mostrar Contraseña
+          </button>
+
+          <div class="recordar">
+            <div class="round">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </div>
+            <p id="recordarme">Recordarme</p>
+            <a href="">Contraseña olvidada?</a>
+          </div>
+
+        <div class="auth-container">
+
+          <div class="button-container">
+            <button onclick="login()" id="iniciar" >Iniciar sesion</button>
+          </div>
+          
+        </div>
+          
+          <hr />
+          <div class="text-continuar">
+            <div>O continuar con</div>
+          </div>
+
+          <div class="iconos">
+            <div id="icon-login">
+              <img src="./images/icon-go.png" alt="" />
+            </div>
+            <div id="icon-login">
+              <img src="./images/icon-face.png" alt="" />
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="section2">
+        <img id="logo" src="./images/Logo Colegio.png" alt="" />
+      </section>
+    </main>
+
+    <script>
+      function mostrarContrasena() {
+        var tipo = document.getElementById("contrasenia");
+        if (tipo.type == "text") {
+          tipo.type = "password";
+        } else {
+          tipo.type = "text";
+        }
+      }
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase-auth.min.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/login.js"></script>
+
+  </body>
+</html>

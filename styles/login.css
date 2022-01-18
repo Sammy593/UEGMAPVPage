@@ -1,0 +1,269 @@
+html{
+    margin: 0;
+    font-family: Open sans;
+}
+/* Estilos del nav */
+nav{
+    box-sizing: border-box;
+    display: flex;
+    place-content: flex-end;
+    width: 100%;
+    padding: 2% 5% 2% 0;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #444B59;
+}
+
+nav select{
+    border: none;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #444B59;
+}
+/* fin estilos del nav*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+/* section 1 */
+.section1{
+    width: 40%;
+    margin: 0;
+    padding-left: 8%;
+    padding-right: 0%;
+}
+.cabecera h1{
+    font-family: Anton;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+.cabecera h4{
+    font-family: Open sans;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    margin: 0;
+}
+.cabecera a{
+    text-decoration:  none;
+}
+
+.cabecera h1,
+.cabecera a{
+    color: #4B7E88;
+}
+
+.form{
+    position: relative;
+    padding-top: 25px;
+    font-family: Open sans;
+    font-weight: 400;
+}
+
+.form label{
+    font-size: 1em;
+    font-family: Open sans;
+}
+.form .border-input{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.form input{
+    font-family: Open sans;
+    padding: 3%;
+    color:#4B7E88;
+    width: 90%;
+    border: #4B7E88 2px solid;
+    border-radius: 40px;
+    letter-spacing: 0.02em;
+    font-size: 1em;
+}
+
+.btn{
+    width: 30%;
+    background: white;
+    color: #4B7E88;
+    border: #4B7E88 1px solid;  
+    border-radius: 20px;  
+    margin: 1%;
+    padding: 1%;
+    font-family: open sans;
+}
+.btn:hover{
+    background:#4B7E88 ;
+    color: white;
+    border: none;
+}
+/* checkbox*/
+.round {
+    position: relative;
+  }
+  
+  .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+  }
+  
+  .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+  }
+  
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .round input[type="checkbox"]:checked + label {
+    background-color:#4B7E88;
+    border-color: #4B7E88;
+  }
+  
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+.recordar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 5% 0 2% 0;
+}
+.recordar p{
+    margin: 0;
+}
+/* fin checkbox*/
+
+#recordarme, a{
+    margin-left: 25px;
+    padding: 5px;
+}
+.recordar a{
+    position: absolute;
+    text-decoration: none;
+    font-family: open sans;
+    color:#4B7E88;
+    right: -7%;
+}
+
+/*boton*/
+.button-container{
+    position: relative;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+#iniciar{
+    background:#4B7E88;
+    color: white;
+    font-family: open sans;
+    font-weight: bold;
+    padding: 4%;
+    border-radius: 30px;
+    width: 97%;
+    border: 0;
+    font-size: 17px;
+}
+
+#iniciar:hover{
+    background: #fff;
+    color: #4B7E88;
+    border: #4B7E88 solid 2px;
+}
+
+.form hr{
+    position: relative;
+    width: 70%;
+    height: 1px;
+    background: #4B7E88;
+    color: #4B7E88;
+    top: 10px;
+}
+
+.text-continuar{
+    position: relative;
+    background: white;
+    left: 35%;
+    width: 30%;
+    font-family: open sans;
+    color:#4B7E88;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.text-continuar div{
+    border:#4B7E88 solid 1px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.iconos{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+#icon-login{
+    position: relative;
+    border: #4B7E88 2px solid;
+    width: 100px;
+    height: 60px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.iconos img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.iconos img:hover{
+    width: 150%;
+    height: 150%;
+    top: -5px;
+    left: -7px;
+}
+
+
+/* section 2 */
+
+.section2{
+    width: 50%;
+    padding: 1%;
+    margin-left: 5%;
+}
+
+#logo{
+    width: 90%;
+}
