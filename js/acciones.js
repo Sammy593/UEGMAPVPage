@@ -52,9 +52,6 @@ firebase.auth().onAuthStateChanged((user)=>{
     profileNameContainer.innerHTML = user.displayName;
 });
 
-let inicio = getElementById("inicio");
-let cerrar = getElementById("cerrar");
-
 function signOut(){
     firebase.auth().signOut()
 }
