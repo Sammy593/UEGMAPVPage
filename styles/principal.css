@@ -607,3 +607,13 @@ main{
 .inf3{
     text-align: center;
 }
+
+/*responsive*/
+@media only screen and (max-device-width: 1023px) and
+(min-device-width: 768px){
+    body{
+        background: red;
+    }
+  }
+
+  /*  https://www.jluislopez.es/diseno-web-responsive/ */
